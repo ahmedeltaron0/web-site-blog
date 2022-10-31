@@ -1,0 +1,23 @@
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+
+  {%for cats in cats %}
+
+  <li><a href="/category/{{cats.url}}">{{cats.title}}</a></li>
+  {% endfor %}
+</ul>
+<nav class="bg_primary">
+  <div class="container">
+    <div class="nav-wrapper">
+    <a href="/home" class="brand-logo"> ITI BLOGS</a>
+    <ul class="right hide-on-med-and-down">
+      <!--<li><a href="/admin">admin</a></li>-->
+       <li><a href="/register">register</a></li>
+      <li><a href="/login">login</a></li>
+       <li><a href="/add_post">Add Post</a></li>
+       <li><a href="/add_category">Add Category</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">CATEGORY<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</nav>

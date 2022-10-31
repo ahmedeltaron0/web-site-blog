@@ -1,0 +1,26 @@
+{%extends 'base.html' %}
+
+{%block title%}ADD POST {%endblock%}
+
+{%block content%}
+
+<h1>ADD POST...</h1>
+<br/><br/>
+
+
+
+    <form enctype="multipart/form-data" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button style="background-color: #74cfbf" class="btn btn_secondary">ADD POST</button>
+
+    </form>
+<br/>
+  <div class="container center-align mt20">
+                    <a  style="background-color: #74cfbf" href="/home/" class="btn bg-primary">BACK</a>
+  </div>
+
+
+
+
+{%endblock%}

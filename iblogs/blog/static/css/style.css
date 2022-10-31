@@ -1,0 +1,17 @@
+ .bg_primary{
+ background:#477091!important ;
+}
+
+ .mt20{
+  margin-top:20px;
+
+ }
+ .container-custom{
+  width:95%!important;
+  margin:auto;
+ }
+ .carrd{
+  width: 90%;
+  height: 200px;
+  align: center;
+}
